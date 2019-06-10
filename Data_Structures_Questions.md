@@ -18,9 +18,15 @@ Answer the following questions for each of the data structures you implemented a
 
 1. What is the runtime complexity of `insert`? 
 
+        O(log(n)), because at each intersection we're eliminating half of the tree from the list of nodes that we have to evaluate.  This assumes a balanced tree.  If it's grossly imbalanced, we might have to evaluate as many as O(n) items.
+
 2. What is the runtime complexity of `contains`?
 
+        O(log(n)), see above.
+
 3. What is the runtime complexity of `get_max`? 
+
+        O(log(n)), see above.
 
 ## Heap
 
