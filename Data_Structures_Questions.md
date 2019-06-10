@@ -32,13 +32,23 @@ Answer the following questions for each of the data structures you implemented a
 
 1. What is the runtime complexity of `_bubble_up`?
 
+        On a balanced tree, it should be O(log(n)), as we only have to evaluate one lineage between parent and leaf (so it's like we're going in the opposite direction, which we also know to be O(log(n))).  In the worst case of a completely unbalanced tree, however, complexity would be O(n).
+
 2. What is the runtime complexity of `_sift_down`?
+
+        O(n), because in this case we have to evaluate all the nodes in the tree.
 
 3. What is the runtime complexity of `insert`?
 
+        Same as `_bubble_up`, so O(log(n))
+
 4. What is the runtime complexity of `delete`?
 
+        Same as `_sift_down`, so O(n)
+
 5. What is the runtime complexity of `get_max`?
+
+        O(1).  That's the beauty of heaps.
 
 ## Doubly Linked List
 
